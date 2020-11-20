@@ -1,98 +1,62 @@
 // 变量 $+变量名
-$w:400px;
-$h:200px;
-$c:red;
-$len:50%*10; // 500%
-/* 标题样式 */
-h1{
-  width: $w;
-  height: $h;
-  color: $c;
-  background-color: #ccc;
-}
+$w:1090px;
+//$len:50%*10; // 500%
 
 // sass中的注释有两种
 // 1. // sass有的注释，不会被编译到css文件中
 // /* xxx */ 会被编译到css文件中
 
 // 嵌套语法
-.box{
-  width: $w;
-  background-color: lightblue;
-  h2{
-    font-size: 30px;
-    color: blue;
-  }
-  .show{
-    width: 300px;
-    height: 100px;
-    span{
-      color: red;
+.wrap{
+  height: 30px;
+  background-color: rgb(238, 238, 238);
+  .top{
+    width: $w;
+    background-color: rgb(238, 238, 238);
+    margin: 0 auto;
+    height: 30px;
+    .top_l{
+      float: left;
+      a{
+        color: rgb(145, 145, 145);
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 12px;
+        line-height: 30px;
+      }
     }
-    p{
-      color: yellow;
+    .top_r{
+      float: right;
+      li{
+        float: left;
+        font-size: 12px;
+        line-height: 30px;
+        margin-left: 14px;
+        a{
+          color: rgb(145, 145, 145);
+        }
+        .icon-shoucang{
+          font-size: 12px;
+          color: rgb(145, 145, 145);
+          line-height: 30px;
+        }
+      }
+      .icon-xiala{
+        font-size: 12px;
+        color: rgb(145, 145, 145);
+        line-height: 30px;
+      }
+      .iphone{
+        background-image: url(../img/header_sprites1.png);
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-position-y: -20px;
+        padding: 0 15px;
+        color: rgb(255, 43, 131);
+      }
     }
   }
-}
-
-// & 指向父选择器
-a{
-  color: blue;
-  &:hover{
-    color: red;
-  }
-}
-.content{
-  width: 500px;
-  &-title{
-    color: red;
-  }
-  &-main{
-    color: blue;
-  }
-}
-
-// @import 引入外部样式
-@import 'header.scss';
-
-// @mixin 混合器
-@mixin nostyle {
-  list-style: none;
-  li{
-    padding: 0;
-    color: blue;
-  }
-}
-.list{
-  width: 500px;
-  @include nostyle;
-}
-
-// 混合器传参
-@mixin common($w,$h,$c) {
-  width: $w;
-  height: $h;
-  color: $c;
-}
-.box1{
-  background-color: #ccc;
-  @include common(500px,200px,red);
-}
-.box2{
-  padding: 10px;
-  @include common(300px,100px,blue);
-}
-
-// 继承
-.box3{
-  padding: 20px;
-  margin: 10px;
-  font-size: 20px;
-}
-.box4{
-  width: 500px;
-  background: pink;
-  @extend .box3;
+  
 }
 
 
