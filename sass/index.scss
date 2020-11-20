@@ -17,12 +17,22 @@ $w:1090px;
     height: 30px;
     .top_l{
       float: left;
+      p{
+        float: left;
+        margin-right: 20px;
+        font-size: 12px;
+        line-height: 30px;
+        color: rgb(145, 145, 145);
+      }
       a{
         color: rgb(145, 145, 145);
         display: inline-block;
         margin-right: 20px;
         font-size: 12px;
         line-height: 30px;
+      }
+      a:hover{
+        color: rgb(255, 43, 131);
       }
     }
     .top_r{
