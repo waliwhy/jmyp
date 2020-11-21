@@ -250,25 +250,34 @@ body{
     text-indent: -9999px;
     position: relative;
   }
-  p{
+  /* p{
     position: absolute;
-    bottom: 190px;
+    bottom: 0;
     right: 228px;
     color: #ed145b;
     font-size: 12px;
     background: url(../img/clock.jpg) no-repeat left 2px;
     padding-left: 18px;
-  }
+  } */
 }
 .goods{
   width: $w;
   margin: $mar;
+  ul{
+    width: 1110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: -20px;
+ 
   .goods_box{
     width: 350px;
     height: 470px;
     background: white;
     padding: 10px;
     box-shadow: 4px 0 5px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    margin: 0 20px 20px 0;
+    float: left;
     .img_box{
       width: 330px;
       height: 345px;
@@ -291,7 +300,7 @@ body{
           display: block;
           background-image: url(../img/new_haitao_icon.jpg);
           background-repeat: no-repeat;
-          z-index: 99;
+          z-index: 1;
           position: absolute;
           left: 0;
           top: 0;
@@ -319,6 +328,44 @@ body{
         font-family: Arial,Helvetica,sans-serif;
         font-size: 22px;
       }
+    }
+    .new_box{
+      width: 330px;
+      height: 345px;
+      background-color: rgba(255, 255, 255, 0.281);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      p{
+        width: 330px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.39);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .btn_add{
+        background: #ed145b;
+        width: 78px;
+        height: 30px;
+        color: white;
+        display: block;
+        border: 0;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+      }
+    }
+    &:hover .new_box{
+      display: block;
+     }
     }
   }
 }
