@@ -1,5 +1,6 @@
 // 变量 $+变量名
 $w:1090px;
+$mar: 0 auto;
 //$len:50%*10; // 500%
 
 // sass中的注释有两种
@@ -13,7 +14,7 @@ $w:1090px;
   .top{
     width: $w;
     background-color: rgb(238, 238, 238);
-    margin: 0 auto;
+    margin: $mar;
     height: 30px;
     .top_l{
       float: left;
@@ -30,9 +31,9 @@ $w:1090px;
         margin-right: 20px;
         font-size: 12px;
         line-height: 30px;
-      }
-      a:hover{
-        color: rgb(255, 43, 131);
+        &:hover{
+          color: rgb(255, 43, 131);
+        }
       }
     }
     .top_r{
@@ -64,9 +65,90 @@ $w:1090px;
         padding: 0 15px;
         color: rgb(255, 43, 131);
       }
+      .line{
+        display: inline-block;
+        width: 1px;
+        height: 12px;
+        background: #ccc;
+        margin-top: 8px;
+        margin-right: 8px;
+      }
     }
   }
-  
+  .shop{
+    width: $w;
+    margin: $mar;
+    height: 110px;
+    border-top: 1px solid white;
+    .logo{
+      width: 165px;
+      height: 85px; 
+      float: left;
+      a{
+        width: 165px;
+        height: 85px;
+        background: url(../img/logo_new_v1.jpg) no-repeat;
+        display: block;
+        margin: 12px 0;
+        text-indent: -9999px;
+      }
+    }
+    .search_box{
+      width: 536px;
+      height: 110px;
+      margin-left: 124px;
+      float: left;
+      //background-color: yellowgreen;
+      padding-top: 28px;
+      .search{
+        width: 436px;
+        height: 38px;
+        border: 3px solid #ed145b;
+        padding: 5px 6px;
+        display: block;
+        float: left;
+      }
+      .sea_btn{
+        width: 100px;
+        height: 38px;
+        background: #ed145b;
+        border: 0;
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        color: white;
+      }
+      p{
+        color: #666;
+        font-size: 12px;
+        margin: 5px 0;
+      }
+    }
+    .car{
+      width: 140px;
+      height: 34px;
+      float: right;
+      margin-top: 33px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      img{
+        padding: 0 5px;
+        float: left;
+      }
+      span{
+        font-size: 12px;
+        color: #666;
+        line-height: 34px;
+      }
+      .icon-xiala{
+        font-size: 10px;
+        line-height: 34px;
+        color: #666;
+      }
+    }
+  }
 }
 
 
