@@ -39,6 +39,9 @@ $(function(){
   })
 
   //点击跳转商品详情页
-
+  $('.goods ul').on('click','li',function(){
+    // alert(11)
+    $(window).attr('location','goodslist.html');
+  })
 
 })
