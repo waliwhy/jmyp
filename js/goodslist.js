@@ -1,0 +1,1 @@
+$('.footerall').load('./footerall.html')

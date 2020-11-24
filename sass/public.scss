@@ -1,0 +1,412 @@
+
+/* //bar侧边栏
+.bar{
+  width: 40px;
+  height: 100%;
+  background: #444851;
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-indent: 99;
+  .ul1{
+    width: 40px;
+    height: 290px;
+    //background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -200px;
+    
+    .login{
+      width: 40px;
+      height: 40px;
+      background: #444851;
+      a{
+        width: 40px;
+        height: 40px;
+        display: block;
+        background-image: url(../img/ibar_sprites.png);
+        background-repeat: no-repeat;
+        background-position-x: 11px;
+        background-position-y: 12px;
+        
+      }
+    }
+    .login1:hover a{
+      background-image: url(../img/ibar_sprites.png);
+      background-repeat: no-repeat;
+      background-position-x: -22px;
+      background-position-y: 12px;
+      background-color: #ed145b;
+  }
+    .car{
+      width: 40px;
+      height: 133px;
+      margin: 30px 0 10px 0;
+      cursor: pointer;
+      padding-top: 6px;
+      a{
+        
+        width: 40px;
+        height: 26px;
+        display: block;
+        background-image: url(../img/ibar_sprites.png);
+        background-repeat: no-repeat;
+        background-position-x: 9px;
+        background-position-y: -26px;
+        
+      }
+      span{
+        display: block;
+        width: 16px;
+        height: 18px;
+        margin-top: 5px;
+        line-height: 16px;
+        text-align: center;
+        margin-left: 13px;
+        font-size: 12px;
+        color: white;
+      }
+      i{
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ed145b;
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        margin-left: 11px;
+        margin-top: 38px;
+      }
+    }
+    .car1:hover{
+      background-color: #ed145b;
+    }
+    .car1:hover a{
+      background-image: url(../img/ibar_sprites.png);
+      background-repeat: no-repeat;
+      background-position-x: -24px;
+      background-position-y: -26px;
+      background-color: #ed145b;
+  }
+    .money{
+      width: 40px;
+      height: 36px;
+      display: block;
+      background-image: url(../img/ibar_sprites.png);
+      background-repeat: no-repeat;
+      background-position-x: 12px;
+      background-position-y: -48px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .like{
+      width: 40px;
+      height: 34px;
+      display: block;
+      background-image: url(../img/ibar_sprites.png);
+      background-repeat: no-repeat;
+      background-position-x: 12px;
+      background-position-y: -76px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  }
+  .ul2{
+    width: 40px;
+    height: 114px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .code{
+      width: 40px;
+      height: 38px;
+      display: block;
+      background-image: url(../img/ibar_sprites.png);
+      background-repeat: no-repeat;
+      background-position-x: 10px;
+      background-position-y: -135px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .ask{
+      width: 40px;
+      height: 32px;
+      display: block;
+      background-image: url(../img/ibar_sprites.png);
+      background-repeat: no-repeat;
+      background-position-x: 13px;
+      background-position-y: -168px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .ul_top{
+      width: 40px;
+      height: 32px;
+      display: block;
+      background-image: url(../img/ibar_sprites.png);
+      background-repeat: no-repeat;
+      background-position-x: 12px;
+      background-position-y: -198px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+//底部
+.footer_box{
+  height: 822px;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+.footer{
+ // width: $w;
+  height: 822px;
+  margin: $mar;
+  
+  .foo_1{
+    width: $w;
+    height: 186px;
+    //background-color: lightgreen;
+    margin: $mar;
+    padding: 30px 0 15px 0;
+    border-bottom: 1px solid #ccc;
+    .li_box{
+      width: 181px;
+      height: 140px;
+      //background-color: lightpink;
+      float: left;
+      overflow: hidden;
+
+      .pic_box{
+        width: 181px;
+        height: 63px;
+        background-image: url(../img/footer_new.png);
+        background-repeat: no-repeat;
+        background-position-x: -253px;
+        background-position-y: 0;
+      }
+      .pic{
+        width: 63px;
+        height: 63px;
+        display: block;
+        margin: 0 auto 20px;
+        
+      }
+      .li_title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+      }
+      .li_span{
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        display: block;
+      }
+    }
+  }
+  .foo_2{
+    width: $w;
+    margin: $mar;
+    height: 280px;
+    padding-top: 30px;
+    .links{
+      font-size: 14px;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 10px;
+      
+    }
+    .linksa{
+      width: 176px;
+      height: 120px;
+      padding-left: 16px;
+      float: left;
+      a{
+        line-height: 22px;
+        color: #666;
+        font-size: 12px;
+        transition: transform .4s linear;
+        display: block;
+        &:hover{
+         transform: translateX(8px);
+          color: #ed145b;
+        }
+      }
+    }
+    .linksb{
+      width: 156px;
+      padding-left: 16px;
+      float: left;
+      a{
+        line-height: 22px;
+        color: #666;
+        font-size: 12px;
+        transition: transform .4s linear;
+        display: block;
+        &:hover{
+         transform: translateX(8px);
+          color: #ed145b;
+        }
+      }
+    }
+    .linksc{
+      width: 172px;
+      height: 120px;
+      padding-left: 16px;
+      float: left;
+      a{
+        line-height: 22px;
+        color: #666;
+        font-size: 12px;
+        transition: transform .4s linear;
+        display: block;
+        &:hover{
+         transform: translateX(8px);
+          color: #ed145b;
+        }
+      }
+    }
+    .linksd{
+      width: 172px;
+      height: 120px;
+      padding-left: 16px;
+      float: left;
+      a{
+        line-height: 22px;
+        color: #666;
+        font-size: 12px;
+        transition: transform .4s linear;
+        display: block;
+        &:hover{
+         transform: translateX(8px);
+          color: #ed145b;
+        }
+      }
+    }
+    .linkse{
+      width: 134px;
+      height: 120px;
+      padding-left: 16px;
+      float: left;
+      a{
+        line-height: 22px;
+        color: #666;
+        font-size: 12px;
+        transition: transform .4s linear;
+        display: block;
+        &:hover{
+         transform: translateX(8px);
+          color: #ed145b;
+        }
+      }
+    }
+    .linksf{
+      width: 119px;
+      height: 146px;
+      padding-left: 36px;
+      float: left;
+      li{
+        width: 84px;
+        
+      }
+      span{
+        width: 78px;
+        height: 78px;
+        background: url(../img/jumei_weixin_footer.png) no-repeat;
+        display: block;
+      }
+      .app{
+        font-size: 12px;
+        color: #999;
+        white-space: nowrap;
+      }
+    }
+    .linksg{
+      width: 119px;
+      height: 146px;
+      padding-left: 36px;
+      float: left;
+      li{
+        width: 84px;
+        
+      }
+      span{
+        width: 78px;
+        height: 78px;
+        background: url(../img/jumei_weixin_footer.png) no-repeat;
+        display: block;
+      }
+      .app{
+        font-size: 12px;
+        color: #999;
+        white-space: nowrap;
+      }
+    }
+  }
+  .foo_3{
+    width: 100%;
+    height: 95px;
+    p{
+      width: 100%;
+      height: 95px;
+      margin: $mar;
+      background: url(../img/footer_dy.jpg) no-repeat top center;
+    }
+  }
+  .foo_4{
+    height: 48px;
+    background: url(../img/footer_btm02_bg.jpg) top center;
+
+    ul{
+      width: $w;
+      margin: $mar;
+      height: 48px;
+    }
+    li{
+      float: left;
+      a{
+        color: white;
+        font-size: 12px;
+        line-height: 48px;
+        display: inline-block;
+        padding-right: 12px;
+      }
+    }
+  }
+  .foo_5{
+    height: 212px;
+    background: url(../img/newindex_footer_bg.png) top center;
+    p{
+      width: 1150px;
+      height: 77px;
+      margin: $mar;
+      span{
+        font-size: 12px;
+        color: #999;
+        display: block;
+        line-height: 40px;
+      }
+      i{
+        font-size: 12px;
+        color: #999;
+        display: block;
+        line-height: 40px;
+      }
+     
+    }
+    em{
+      width: 1150px;
+      height: 50px;
+      display: block;
+      margin: $mar;
+      margin-top: 30px;
+      background: url(../img/footer_btm_icon.png) no-repeat;
+    }
+  }
+} */
