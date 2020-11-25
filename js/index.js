@@ -49,7 +49,14 @@ $(function(){
     window.open('goodslist.html');
   })
 
-  //点击添加购物车跳转购物车结算页面
+  //点击添加购物车侧边栏购物车数量+1
+  $('.goods ul').on('click','.btn_add',function(){
+    // alert(111)
+    var countI = $('.count0');
+
+
+
+  })
   
 
 

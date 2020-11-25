@@ -1,0 +1,134 @@
+$c_w:960px;
+$mr:0 auto;
+
+.box{
+  border-bottom: 1px solid #999;
+
+  .cart_box{
+    width: $c_w;
+    height: 32px;
+    margin: $mr;
+    // background-color: lawngreen;
+
+    .cart_top{
+      float: right;
+
+      p{
+        font-size: 12px;
+        color: #999;
+        line-height: 32px;
+        float: left;
+      }
+      ul{
+        float: right;
+        
+        li{
+          margin-left: 10px;
+          float: left;
+          font-size: 12px;
+          color: #999;
+          line-height: 32px;
+          .name{
+            color: #ed145b;
+          }
+          a{
+            font-size: 12px;
+            color: #999;
+            line-height: 32px;
+            &:hover{
+              color: #ed145b;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cart_header{
+    width: $c_w;
+    height: 67px;
+    margin: $mr;
+    padding-bottom: 15px;
+
+    .logo{
+      float: left;
+    }
+    .path{
+      width: 377px;
+      height: 48px;
+      background-color: lightblue;
+      float: right;
+      background: url(../img/order_path.png) no-repeat -2px -2px;
+    }
+  }
+}
+
+.content{
+  padding-top: 15px;
+
+  .con_cart{
+    width: $c_w;
+    margin: $mr;
+    height: 868px;
+    background-color: lavenderblush;
+
+    .con_header{
+      width: $c_w;
+      margin: $mr;
+      height: 30px;
+      background-color: lightblue;
+
+      .con_timer{
+        float: left;
+
+        i{
+          width: 18px;
+          height: 26px;
+          display: block;
+          background-image: url(../img/icons.png);
+          background-repeat: no-repeat;
+          background-position-x: -4px;
+          background-position-y: 2px;
+          padding-top: 8px;
+          float: left;
+        }
+        .time{
+          font-size: 12px;
+          line-height: 30px;
+          margin-bottom: 8px;
+          display: block;
+          margin-left: 5px;
+          float: left;
+        }
+      }
+     
+      .con_banner{
+        width: 383px;
+        height: 30px;
+        float: right;
+        li{
+          float: left;
+          .em1{
+            width: 26px;
+            height: 27px;
+            margin-right: 5px;
+            background-image: url(../img/header_sprites1.png);
+            background-repeat: no-repeat;
+            background-position-x: 0;
+            background-position-y: -105px; 
+            display: block;
+            float: left;           
+
+          }
+          span{
+            font-size: 12px;
+            line-height: 30px;
+            margin-bottom: 8px;
+            margin-left: 5px;
+          }
+          
+        }
+      }
+    }
+  }
+}
