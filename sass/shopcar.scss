@@ -76,7 +76,6 @@ $mr:0 auto;
       width: $c_w;
       margin: $mr;
       height: 30px;
-      background-color: lightblue;
 
       .con_timer{
         float: left;
@@ -124,7 +123,273 @@ $mr:0 auto;
             font-size: 12px;
             line-height: 30px;
             margin-bottom: 8px;
+            margin-right: 5px;
+          }
+          .em2{
+            width: 26px;
+            height: 27px;
+            margin-right: 5px;
+            background-image: url(../img/header_sprites1.png);
+            background-repeat: no-repeat;
+            background-position-x: 0;
+            background-position-y: -139px; 
+            display: block;
+            float: left;           
+
+          }
+          span{
+            font-size: 12px;
+            line-height: 30px;
+            margin-bottom: 8px;
+            margin-right: 5px;
+          }
+          .em3{
+            width: 26px;
+            height: 27px;
+            margin-right: 5px;
+            background-image: url(../img/header_sprites1.png);
+            background-repeat: no-repeat;
+            background-position-x: 0;
+            background-position-y: -175px; 
+            display: block;
+            float: left;           
+
+          }
+          span{
+            font-size: 12px;
+            line-height: 30px;
+            margin-bottom: 8px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      
+    }
+
+    .car_wrap{
+      width: $c_w;
+      height: 436px;
+      margin: $mr;
+      background-color: lightsalmon;
+
+      .car_list{
+        width: 100%;
+        height: 168px;
+        margin-top: 10px;
+        font-size: 12px;
+        border: 1px solid #eee;
+        background-color: linen;
+
+        .title{
+          width: 959px;
+          height: 35px;
+          border-left: 4px solid #851b97;
+          background-color: mistyrose;
+
+          .shopName{
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 35px;
+            display: inline-block;
+            width: 516px;
             margin-left: 5px;
+
+            .car_check{
+              margin: 0 5px;
+            }
+          }
+          .car_other{
+            font-size: 12px;            line-height: 35px;
+            display: inline-block;
+            text-align: center;
+          }
+          .car_price{
+            width: 95px;
+          }
+          .car_num{
+            width: 115px;
+
+          }
+          .car_count{
+            width: 92px;
+
+          }
+          .car_more{
+            width: 80px;
+
+          }
+        }
+
+        .car_main{
+          height: 100px;
+          background-color: moccasin;
+
+          .car_ul{
+            float: left;
+
+            .car_item_shop{
+              width: 526px;
+              height: 100px;
+              float: left;
+              background-color: olive;
+  
+              .car_item_check{
+                margin-top: 44px;
+                margin-left: 20px;
+                float: left;
+              }
+  
+              .car_item_box{
+                .img_box{
+                  display: inline-block;
+                  width: 60px;
+                  height: 60px;
+                  margin-left: 30px;
+                  img{
+                    width: 60px;
+                    height: 60px;
+                    vertical-align: middle;
+                    margin-top: 22px;
+                    margin-left: -10px;
+                  }
+                }
+                .img_title{
+                  h2{
+                    display: inline-block;
+                    width: 250px;
+                    height: 18px;
+                    line-height: 16px;
+                    color: #000;
+                    font-size: 13px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+                  &:hover h2{
+                    color: #ed145b;
+                    text-decoration: underline;
+                  }
+                }
+                .img_span{
+                  display: block;
+                  margin-left: 126px;
+                  width: 229px;
+                  color: #999;
+                }
+              }
+            }
+
+            .car_item_price{
+              width: 95px;
+              height: 100px;
+              background-color: aqua;
+              padding: 20px;
+              float: left;
+
+              .now_price{
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 24px;
+              }
+              .market_price{
+                font-size: 12px;
+                text-decoration: line-through;
+                text-align: center;
+
+              }
+            }
+
+            .car_item_num{
+              width: 115px;
+              height: 100px;
+              padding: 20px;
+              margin-left: 5px;
+              float: left;
+              background-color: violet;
+
+              .item_num{
+                width: 74px;
+                height: 22px;
+                border: 1px solid #e5e5e5;
+                border-radius: 3px;
+
+                .item_minus{
+                  display: block;
+                  width: 22px;
+                  height: 21px;
+                  line-height: 22px;
+                  text-align: center;
+                  border-right: 1px solid #e5e5e5;
+                  float: left;
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  background-color: #e0e0e041;
+
+                }
+                .item_add{
+                  display: block;
+                  width: 22px;
+                  height: 21px;
+                  line-height: 22px;
+                  text-align: center;
+                  border-left: 1px solid #e5e5e5;
+                  float: left;
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  background-color: #e0e0e041;
+
+                }
+                .num_inp{
+                  width: 28px;
+                  border: 0;
+                  outline: none;
+                  height: 20px;
+                  display: block;
+                  float: left;
+                  text-align: center;
+                  line-height: 22px;
+                }
+              }
+            }
+
+            .car_item_count{
+              width: 92px;
+              height: 100px;
+              padding: 20px 0;
+              margin-left: 5px;
+              background-color: aqua;
+              float: left;
+
+              .item_count{
+                font-size: 12px;
+                font-weight: bold;
+                color: #ed145b;
+                line-height: 24px;
+                text-align: center;
+              }
+              .all_count{
+                ont-size: 12px;
+                line-height: 24px;
+                text-align: center;
+              }
+            }
+
+            .car_item_more{
+              width: 80px;
+              height: 100px;
+              padding: 20px;
+              float: left;
+              margin-left: 5px;
+              background-color: aquamarine;
+              span{
+                background-image: url(../img/icons.png);
+                background-repeat: no-repeat;
+                background-position-x: 2px;
+                background-position-y: 4px;
+              }
+            }
           }
           
         }
@@ -132,3 +397,4 @@ $mr:0 auto;
     }
   }
 }
+
