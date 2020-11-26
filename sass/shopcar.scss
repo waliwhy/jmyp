@@ -70,7 +70,6 @@ $mr:0 auto;
     width: $c_w;
     margin: $mr;
     height: 868px;
-    background-color: lavenderblush;
 
     .con_header{
       width: $c_w;
@@ -171,7 +170,6 @@ $mr:0 auto;
       width: $c_w;
       height: 436px;
       margin: $mr;
-      background-color: lightsalmon;
 
       .car_list{
         width: 100%;
@@ -179,13 +177,12 @@ $mr:0 auto;
         margin-top: 10px;
         font-size: 12px;
         border: 1px solid #eee;
-        background-color: linen;
 
         .title{
           width: 959px;
           height: 35px;
           border-left: 4px solid #851b97;
-          background-color: mistyrose;
+          background-color: #e8e8e8;
 
           .shopName{
             font-size: 12px;
@@ -223,7 +220,6 @@ $mr:0 auto;
 
         .car_main{
           height: 100px;
-          background-color: moccasin;
 
           .car_ul{
             float: left;
@@ -232,7 +228,6 @@ $mr:0 auto;
               width: 526px;
               height: 100px;
               float: left;
-              background-color: olive;
   
               .car_item_check{
                 margin-top: 44px;
@@ -283,7 +278,6 @@ $mr:0 auto;
             .car_item_price{
               width: 95px;
               height: 100px;
-              background-color: aqua;
               padding: 20px;
               float: left;
 
@@ -307,7 +301,6 @@ $mr:0 auto;
               padding: 20px;
               margin-left: 5px;
               float: left;
-              background-color: violet;
 
               .item_num{
                 width: 74px;
@@ -325,7 +318,8 @@ $mr:0 auto;
                   float: left;
                   border-spacing: 0;
                   border-collapse: collapse;
-                  background-color: #e0e0e041;
+                  background-color: #e0e0e041;                cursor: pointer;
+
 
                 }
                 .item_add{
@@ -339,6 +333,7 @@ $mr:0 auto;
                   border-spacing: 0;
                   border-collapse: collapse;
                   background-color: #e0e0e041;
+                  cursor: pointer;
 
                 }
                 .num_inp{
@@ -359,7 +354,6 @@ $mr:0 auto;
               height: 100px;
               padding: 20px 0;
               margin-left: 5px;
-              background-color: aqua;
               float: left;
 
               .item_count{
@@ -370,7 +364,7 @@ $mr:0 auto;
                 text-align: center;
               }
               .all_count{
-                ont-size: 12px;
+                font-size: 12px;
                 line-height: 24px;
                 text-align: center;
               }
@@ -382,19 +376,123 @@ $mr:0 auto;
               padding: 20px;
               float: left;
               margin-left: 5px;
-              background-color: aquamarine;
-              span{
+              a{
+                display: block;
+                width: 40px;
+                height: 19px;
+                margin-top: 15px;
                 background-image: url(../img/icons.png);
                 background-repeat: no-repeat;
                 background-position-x: 2px;
-                background-position-y: 4px;
+                background-position-y: -28px;
               }
             }
+
+            
           }
           
         }
+        .car_footer{
+          width: 959px;
+          height: 31px;
+          background-color: #e8e8e8;
+
+          .car_item_footer{
+            float: right;
+            width: 400px;
+            height: 31px;
+            line-height: 31px;
+            text-align: right;
+            margin-right: 10px;
+            span{
+              color: #ed145b;
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .car_total{
+        width: $c_w;
+        height: 50px;
+        margin: 10px 0; 
+        background-color: #e8e8e8;
+        border: 1px solid #eee;
+
+        .car_total_l{
+          width: 400px;
+          float: left;
+          line-height: 50px;
+          font-size: 12px;
+          color: #333;
+          
+          .all{
+            line-height: 50px;
+            font-size: 12px;
+            color: #333;
+            margin-right: 5px;
+            margin-left: 10px;
+
+          }
+          a{
+            line-height: 50px;
+            font-size: 12px;
+            color: #333;
+            margin: 0 10px;
+
+            &:hover{
+              color: #ed145b;
+            }
+          }
+        }
+
+        .car_total_r{
+          float: right;
+          line-height: 50px;
+          font-size: 12px;
+          color: #333;
+          .total_count{
+            font-size: 14px;
+            font-weight: bold;
+            color: #ed145b;
+            line-height: 50px;
+            margin: 0 5px;
+
+          }
+          .total_price{
+            font-size: 18px;
+            font-weight: bold;
+            color: #ed145b;
+            line-height: 50px;
+            margin: 0 5px;
+
+          }
+          .total_btn{
+            display: block;
+            float: right;
+            width: 154px;
+            height: 48px;
+            background-color: #ed145b;
+            color: white;
+            line-height: 48px;
+            margin-left: 10px;
+            cursor: pointer;
+            
+          }
+        }
       }
     }
+  }
+}
+
+.car_footerall{
+  height: 160px;
+  background-color: rgb(242,242,242);
+  img{
+    width: 878px;
+    margin: $mr;
+    display: block;
   }
 }
 
