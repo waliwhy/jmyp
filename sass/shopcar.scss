@@ -318,8 +318,8 @@ $mr:0 auto;
                   float: left;
                   border-spacing: 0;
                   border-collapse: collapse;
-                  background-color: #e0e0e041;                cursor: pointer;
-
+                  background-color: #e0e0e041;                
+                  cursor:not-allowed;
 
                 }
                 .item_add{
@@ -494,5 +494,11 @@ $mr:0 auto;
     margin: $mr;
     display: block;
   }
+
 }
 
+.null{
+font-size: 18px;
+text-align: center;
+line-height: 400px;
+}

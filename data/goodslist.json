@@ -1,20 +1,12 @@
 [
   {"title":"时尚，是一种态度！迪奥（Dior）烈艳蓝金唇膏口红3.5g（多色可选），经典热卖色，让你颠覆以往，绽放动人绝妙之美。绚丽色调，缔造闪亮唇妆，寻回法式优雅传统，尊贵配方，蕴含海茴香精华，柔滑丰盈美唇，同时令每一种唇膏色彩于双唇尽情闪耀。","imgs":"img/goods1.jpg","price":"￥109","logo":"img/logo1.jpg","country":"img/048_flag.jpg",
 
-    "type":[
-      {"img_url":"img/goods01.jpg", "name":"999#滋润,3.5g"},
-      {"img_url":"img/goods02.jpg", "name":"888#哑光,3.5g"},
-      {"img_url":"img/goods03.jpg", "name":"999#金属,3.5g"},{"img_url":"img/goods04.jpg", "name":"520#,3.5g"},{"img_url":"img/goods05.jpg", "name":"080#,3.5g"},{"img_url":"img/goods06.jpg", "name":"999#哑光,3.5g"},{"img_url":"img/goods07.jpg", "name":"028#,3.5g"}
-    ],
+    
     "code":"abc1"},
 
     {"title":"【3盒装】蒂佳婷药丸面膜（蓝色补水镇静+绿色晒后修护+黑色清洁）","imgs":"img/goods4.jpg","price":"￥145","logo":"" ,"country":"img/021_flag.jpg",
 
-      "type":[
-        {"img_url":"img/goods08.jpg", "name":"4盒【蓝+蓝+蓝+蓝】"},
-        {"img_url":"img/goods09.jpg", "name":"4盒【绿+绿+绿+绿】"},
-        {"img_url":"img/goods010.jpg", "name":"3盒【黑+黑+黑】"}
-      ],
+      
       "code":"abc2"}
   
  
