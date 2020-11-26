@@ -35,6 +35,20 @@ $(function () {
       </a>
       </li>`
         $('.goods ul').html(goodsStr);
+
+        //点击添加购物车
+        $('.goods').on('click', '.goods_box .btn_add', function () {
+          // alert(111);
+          var code = $(this).attr('code');
+          // console.log(code);
+
+          if (localStorage.getItem('goods')) {
+            var goodsArr = JSON.parse(localStorage.getItem())
+          }
+
+
+
+        })
       })
     },
     //  error:function(err){
@@ -42,26 +56,11 @@ $(function () {
     //  }
   })
 
-  //点击跳转商品详情页，这里跳转需要加个商品 id
-  // $('.goods ul').on('click', 'a', function () {
-  //   // alert(11)
-  //   // $(window).attr('location','goodslist.html');
-
-  //   //var value = $(".goods_box > span").html();
-  //   //   window.open('goodslist.html?goodsid=');
-  //   // })
-
-  //   //点击添加购物车
-  //   $('.goods ul').on('click', '.btn_add', function () {
-  //     // alert(111)
-
-
-
-
-  //   })
-  // })
-
 
 
 
 })
+
+
+
+

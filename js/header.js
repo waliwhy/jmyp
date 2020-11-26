@@ -13,5 +13,5 @@ $(function(){
   $('.car').on('click',function(){
     window.open('shopcar.html');
   })
-
+  
 })

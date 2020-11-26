@@ -36,6 +36,13 @@ $(function () {
 
   })
 
+  $('.add_car').on('click',function(){
+    var code = $(this).attr('code');
+    // alert(1);
+    if (localStorage.getItem('goods')) {
+      
+    }
+  })
 
 
 })
