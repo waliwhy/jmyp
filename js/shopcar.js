@@ -57,7 +57,19 @@ $(function(){
       </div>`
 
       })
+      carStr+=`<div class="car_total">
+      <div class="car_total_l ">
+        <input type="checkbox" class="all">全选
+        <a href="./index.html" class="">继续购物</a> | 
+        <a href="">清空选中商品</a>
+      </div>
 
+      <div class="car_total_r">
+        共<span class="total_count">1</span>件商品 &nbsp;&nbsp;&nbsp;
+        商品应付总额：<span class="total_price">¥152.00</span>
+        <button class="total_btn">去结算</button>
+      </div>
+    </div>`
       $('.car_wrap').html(carStr);
       //console.log($('.car_item_num .item_add'));
 
